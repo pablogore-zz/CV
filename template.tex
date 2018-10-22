@@ -1,0 +1,107 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+% Command for printing skill overview bubbles
+\newcommand\skills{ 
+	\smartdiagram[bubble diagram]{
+        \textbf{Software}\\\textbf{Engineering},
+        \textbf{Full Stack}\\\textbf{Dev},
+        \textbf{~~~~~~~~OOP~~~~~~~~~},
+        \textbf{~~~~~~Big~~~~~~}\\\textbf{~~Data~~},
+        \textbf{~~~~~FP~~~~~}
+    }
+}
+% Programming skill bars
+\programming{{Golang $\textbullet$ Scala $\textbullet$ Python/ 2}, {Apache Spark $\textbullet$ Hadoop $\textbullet$ SQL / 3.5}, {Java $\textbullet$ / 5}}
+
+% Language skill bars
+\db{{Oracle $\textbullet$ Postgres $\textbullet$ MySql/ 4},{Casandra $\textbullet$ Mongodb $\textbullet$ Hbase / 2}}
+
+% Language skill bars
+\languages{{English / 4},{Spanish / 6}}
+
+% Projects text
+\education{
+\textbf{Universidad Abierta Iteramericana}\\
+Specialization: System Analist 
+}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{PABLO GORE} % Your name
+\cvjobtitle{ Software Engineer } % Job
+% title/career
+
+\cvlinkedin{/in/pablogore}
+\cvgithub{pablogore}
+\cvnumberphone{(+54) 911 6577 2312} % Phone number
+\cvmail{pablo.m.gore@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+ 
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+\twentyitem
+    	{Ago 2018 -}
+		{Present}
+        {RedLink - Java Architect}
+        {\href{http://https://redlink.com.ar/}{RedLink}}
+        {}
+        {\begin{itemize}
+        \item Definitions and guidelines of architecture of the company and ensure compliance with them.
+        \item Participation in the development life cycle giving support to the different teams during the sprint
+        \item verify and configure sonar maven / gradle and the repositories (git-svn)
+        \newline
+        \newline
+        Tools: Kafka, IBM API Manager, Web Logic 12.x , tomcat 
+        \end{itemize}}
+        \\
+        \twentyitem
+   		{March 2018 -}
+		{Ago 2018}
+        {SpotHero - Big Data Developer}
+        {\href{http://www.spothero.com}{SpotHero}}
+        {}
+        {
+        {\begin{itemize}
+        \item I have been working as a Big Data developer, collaborating with different marketing / engineering team.
+        \newline
+        \newline
+        Among the main activities 
+        \item 1
+    \end{itemize}}
+        }
+     \\
+        
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+\end{document} 
